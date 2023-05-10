@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+header{
+    background: #22bcf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+.headerText{
+    display: flex;
+    gap: 2.5rem;
+    padding-right: 8rem;
+}
+
+.headerIMG > img{
+    width: 20rem;
+    height: 100%;
+}
+
+.headerIMG{
+    padding-left: 8rem;
+}
+
+.HomeScreen{
+    padding: 4rem;
+}
+
+.HomeScreen > h1{
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.HomeScreen > button{
+    background-color: orange;
+    padding: 2rem;
+}
+
