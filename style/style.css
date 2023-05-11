@@ -15,34 +15,101 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 8rem;
+    border-bottom: orange 0.3rem solid;
 }
 
 .headerText{
     display: flex;
     gap: 2.5rem;
     padding-right: 8rem;
+    color: white;
 }
 
 .headerIMG > img{
-    width: 20rem;
+    width: 23.7rem;
     height: 100%;
+
 }
 
 .headerIMG{
     padding-left: 8rem;
 }
 
-.HomeScreen{
-    padding: 4rem;
-}
 
 .HomeScreen > h1{
-    font-size: 4rem;
-    padding: 2rem;
+    position: absolute;
+    top: 45rem;
+    left: 20rem;
+    color: white;
+    font-size: 2.5rem;
+    font-style: italic;
 }
 
 .HomeScreen > button{
+    color: white;
+    position: absolute;
+    top: 48rem;
+    left: 20rem;
+    width: 20rem;
+    height: 10rem;
+    font-size: 2.5rem;
+    background: transparent;
+    border-radius: 30%;
+}
+
+.FrontGame1{
+    padding: 7rem;
+    padding-left: 10rem;
+}
+
+.frontIMG > img{
+    display: flex;
+    width: 99.1vw;
+    padding-left: 0%;
+    border-bottom: orange solid 0.3rem;
+}
+
+.FrontGames{
+    display: flex;
+    justify-content: center;
+    gap: 7.5rem;
+}
+
+.FrontGameColumn > img{
+    width: 30rem;
+}
+
+.FrontGameHeading{
+    position: absolute;
+    top: 110rem;
+    right: 28rem;
+    font-size: 3rem;
+}
+
+.FrontGameText{
+    position: absolute;
+    top: 120rem;
+    right: 45rem;
+    font-size: 1.5rem;   
+}
+
+.FrontGameButton{
+    position: absolute;
+    top: 130rem;
+    right: 45rem; 
+}
+
+.FrontGameButton > button{
+    height: 7rem;
+    width: 15rem;
+    color: white;
     background-color: orange;
-    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 20%;
+    border-color: transparent;
+}
+
+.steps{
+    display: grid ;
 }
 
