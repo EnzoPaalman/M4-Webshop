@@ -110,6 +110,63 @@ header{
 }
 
 .steps{
-    display: grid ;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    
 }
 
+
+.steps > div > img{
+    width: 30rem;
+    height: 25rem;
+}
+
+.stepsrow2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    
+}
+
+
+.stepsrow2 > div > img{
+    width: 30rem;
+    height: 25rem;
+}
+
+.steps > div > h1{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepsrow2 > div > h1{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps > div > h2{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    border-bottom: orange 2px solid;
+    font-style: italic;
+}
+
+.stepsrow2 > div > h2{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    border-bottom: orange 2px solid;
+    font-style: italic;
+}
