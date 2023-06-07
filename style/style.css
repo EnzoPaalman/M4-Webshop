@@ -7,6 +7,7 @@
 html{
     font-size: 62.5%;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -75,12 +76,18 @@ header{
 .FrontGame1{
     padding: 7rem;
     padding-left: 10rem;
-    transition: 0.8s transform;
+}
+
+.FrontGame1 > a > img{
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-fill-mode: backwards;
+    transition: 0.2s transform;
+    background-color: #22bcf8;
 }
 
 .FrontGame1 > a > img:hover{
     transform: scale(1.1);
-
 }
 
 .frontIMG > img{
@@ -106,6 +113,8 @@ header{
 
 .FrontGameColumn > img{
     width: 30rem;
+    animation-fill-mode: backwards;
+    transition: 0.2s transform;
 }
 
 .FrontGameHeading{
@@ -113,13 +122,15 @@ header{
     top: 105rem;
     right: 28rem;
     font-size: 3rem;
+    color: white;
 }
 
 .FrontGameText{
     position: absolute;
     top: 115rem;
     right: 45rem;
-    font-size: 1.5rem;   
+    font-size: 1.5rem; 
+    color: white;  
 }
 
 .FrontGameButton{
@@ -136,6 +147,8 @@ header{
     font-size: 2rem;
     border-radius: 20%;
     border-color: transparent;
+    border-style: solid;
+    border-color: black;
 }
 
 .steps{
@@ -150,6 +163,7 @@ header{
 .steps > div > img{
     width: 30rem;
     height: 25rem;
+    border-radius: 20%;
 }
 
 .stepsrow2{
@@ -164,6 +178,7 @@ header{
 .stepsrow2 > div > img{
     width: 30rem;
     height: 25rem;
+    border-radius: 20%;
 }
 
 .steps > div > h1{
@@ -171,6 +186,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .stepsrow2 > div > h1{
@@ -178,6 +194,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .steps > div > h2{
@@ -188,6 +205,7 @@ header{
     padding-top: 1rem;
     border-bottom: orange 2px solid;
     font-style: italic;
+    color: white;
 }
 
 .stepsrow2 > div > h2{
@@ -198,6 +216,7 @@ header{
     padding-top: 1rem;
     border-bottom: orange 2px solid;
     font-style: italic;
+    color: white;
 }
 
 .circle--first{
@@ -218,15 +237,14 @@ header{
 }
 
 .ps3sale > .PS3frontpage > img {
-    right: 15rem;
-    top: 275rem;
-    position: absolute;
+    margin-left: 90rem;
+    margin-top: 10rem;
     border-style: solid;
     border-color: orange;
     background-color: orange;
     padding-top: 5rem;
     gap: 2rem;
-    box-shadow: 10px 5px 20px gray;
+    box-shadow: 0rem 0rem 1rem 0rem gray;
 }
 
 .ps3sale > .PS3frontpage > h1 {
@@ -234,6 +252,7 @@ header{
     position: absolute;
     top: 280rem;
     left: 20rem;
+    color: white;
 }
 
 .ps3sale > .PS3frontpage > h2 {
@@ -241,5 +260,161 @@ header{
     position: absolute;
     top: 289rem;
     left: 20rem;
+    color: white;
 }
 
+.top{
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    color: white;
+    position: fixed;
+    bottom: 120px;
+    right: 120px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-style: solid;
+    border-color: black;
+}
+.square--first {
+    background-color: #22bcf8;
+    height: 75rem;
+    width: 125rem;
+    z-index: -1;
+    position: absolute;
+    top: 193rem;
+    left: 20rem;
+    border-radius: 2%;
+}
+
+.square--second {
+    background-color: #22bcf8;
+    position: absolute;
+    z-index: -1;
+    height: 45rem;
+    width: 110rem;
+    top: 277rem;
+    left: 18rem;
+    border-radius: 2%;
+}
+
+.section--third{
+    background: white; 
+    display: flex;
+    height: auto;
+    padding: 4rem;
+    align-items: center;
+    }
+    
+.arrow{
+    width: 10%;
+    background: white;
+    font-size: 300%;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.arrow:hover{
+    cursor: pointer;
+}
+    
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+    width: 80%;
+    flex-wrap: wrap;
+}
+    
+.review{
+    width: 30rem;
+    min-height: 20rem;
+    background: darkred;
+    list-style: none;
+    padding: 4rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: white;  
+    box-shadow: 0rem 1rem 1rem 0rem rgba(0,0,0,0.2),
+     inset 0 -1rem 1rem -1rem rgba(0,0,0,0.1);
+    position: relative;
+    animation-name: fadeIn;
+    animation-duration:0.5s;
+}
+    
+.review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6){
+    display: none;
+}
+    
+.review > p {
+    font-size: 120%;
+    font-style: italic;
+    border-bottom: 0.5rem solid rgba(0,0,0,0.2);
+}
+    
+.stars{
+    color: gold;
+}
+    
+.qoute {
+    font-size: 500%;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX (-50%);
+    line-height: 0.5;
+}
+
+.FrontFooter{
+    padding:5rem ;
+    background: #22bcf8
+}
+
+.FrontFooter > h1{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+    
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        filter:blur(10px);
+    }
+    to{
+        opacity: 1;
+        filter:blur(0)
+    }
+}
+    
+@media screen and (max-width: 50rem){
+    .arrow{
+        display: none;
+    }
+    .reviews {
+        width: 100%;
+    }
+}
+
+@keyframes popup{
+    from{
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
