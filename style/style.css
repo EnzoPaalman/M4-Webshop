@@ -318,6 +318,11 @@ header{
     line-height: 0.5;
 }
 
+.review > figure > img {
+    height: 10vh;
+    border-radius: 50%;
+}
+
 .top{
     width: 80px;
     height: 80px;
@@ -349,6 +354,39 @@ header{
     color: white;
     justify-content: space-between;
 }
+
+.productpagegames{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+
+
+.productpagegames > li > img{
+    height: 40vh;
+
+}
+
+.productpagegames > li{
+    background: blue;
+    padding: 2rem;
+}
+
+.ProductGame1{
+    padding: 2rem;
+}
+
+.productpagegames > li > img:hover{
+    transform: scale(1.1);
+    transition: 0.2s transform;
+}
+
 
 @keyframes popup{
     from{
