@@ -374,7 +374,6 @@ header{
 }
 
 .productpagegames > li{
-    background: blue;
     padding: 2rem;
 }
 
@@ -387,6 +386,212 @@ header{
     transition: 0.2s transform;
 }
 
+.games{
+    font-family: sans-serif;
+    font-size: 2rem; 
+    background: #eee;   
+    padding: 8rem;
+    overflow: hidden;
+    mix-blend-mode: darken;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+    width: 100%;
+    margin-bottom: 4rem;
+    flex-wrap: wrap ;
+}
+
+.inputs > div{
+    width: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.filter{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+    background: #eee;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.label:hover{
+    cursor: pointer;
+}
+
+.filter:hover{
+    cursor: pointer;
+}
+
+.filter:checked{
+    background: linear-gradient(green, yellow);
+}
+
+.filter:checked ~ .label{
+    text-decoration: underline;
+}
+
+.listedgames{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.game{
+    list-style: none;
+    width: 25rem;
+    height: 30rem;
+    transition: .2s;
+    flex-grow: 1;
+}
+
+.game:hover{
+    transform: scale(1.02) translateY(-0.7rem);
+    cursor: pointer;
+}
+
+.game > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.skate3img{
+    padding-left: 10rem;
+    padding-top: 4rem;
+    display: flex;
+}
+
+.skate3img > img {
+    width: 60vw;
+    height: 80vh;
+}
+
+.product-container > img {
+    width: 10rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.product-container > a > img {
+    width: 10rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.product-container{
+    padding-left: 5rem;
+}
+.productnameskate{
+    font-size: 5rem;
+    display: flex;
+    padding: 3rem;
+
+}
+
+.skate-price{
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+#addToCartButton{
+    margin-left: 2rem;
+    margin-top: 3rem;
+    height: 7vh;
+    width: 15rem;
+    color: white;
+    background-color: orange;
+    font-size: 2rem;
+    border-radius: 20%;
+    border-color: transparent;
+    border-style: solid;
+    border-color: black;
+}
+
+.fa-shopping-cart{
+    display: flex;
+}
+
+.shoppingCart__message{
+    display: flex;
+
+}
+
+.skate-info{
+    padding: 2rem;
+}
+
+.modal{
+    width: 30vw;
+    height: 50vh;
+    position: fixed;
+    top: 30%;
+    left: 7%;
+    background: #22bcf8; 
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.3);
+    color: orange;
+    font-size: 3rem;
+    font-weight: 400;
+    border-radius: .5rem;
+}
+
+.winkelwagen-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.winkelwagen-items > div{
+    border: solid 2px black;
+    margin: 10rem;
+}
+
+.winkelwagen-items > div > img{
+    width: 20vw;
+}
+
+.winkelwagen-items > div > h1{
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-top: 17rem;
+    margin-right: 50%;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 62.5rem) {
+    .modal{
+        width:calc(100% - 2rem);
+    }
+}
+
+@media (max-width: 800px) {
+    .skate3img {
+      flex-direction: column; /* Change flex direction to column */
+      align-items: center; /* Center the items vertically */
+      padding-left: 2rem; /* Adjust the padding */
+    }
+  
+    .product-container {
+      padding-left: 0; /* Remove the left padding */
+    }
+  
+    .product-container > img {
+      padding: 0.5rem; /* Adjust the padding */
+    }
+  }
 
 @keyframes popup{
     from{
