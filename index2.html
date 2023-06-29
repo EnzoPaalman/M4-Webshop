@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filter</title>
     <link rel="stylesheet" href="style/style.css">
-    <script src="JS/productpage.js" defer></script>
+    <script src="JS/productpage2.js" defer></script>
 </head>
 
 <body>
@@ -29,42 +29,59 @@
         <section class="games">
             <section class="inputs">
                 <div>
-                    <input id="checkbox-actie" type="checkbox" class="filter">
-                    <label for="checkbox-actie" class="label">$10-$20</label>
-                </div>
-                <div>
-                    <input id="checkbox-fifa" type="checkbox" class="filter">
-                    <label for="checkbox-fifa" class="label">$20-$30</label>
-                </div>
-                <div>
-                    <input id="checkbox-formula1" type="checkbox" class="filter">
-                    <label for="checkbox-formula1" class="label">$30-$40</label>
+                    <select id="price-filter" class="filter">
+                        <option value="">Filter by Price</option>
+                        <option value="10-20">$10-$20</option>
+                        <option value="20-30">$20-$30</option>
+                        <option value="30-40">$30-$40</option>
+                    </select>
                 </div>
             </section>
             <ul class="listedgames">
-                <li class="game" data-category="actie"><img src="img/bo2.webp" alt="Call Of Duty black ops 2 voor ps3">
-                </li>
-                <li class="game" data-category="sport"><img src="img/fifa12.webp" alt="Fifa 12 voor de ps3"></li>
-                <li class="game" data-category="racen"><img src="img/lbpracing.webp" alt="little big planet racing for ps3"></li>
-                <li class="game" data-category="actie"><img src="img/gta4.webp" alt="Grand theft auto 4 for ps3">
-                </li>
-                <li class="game" data-category="sport"><img src="img/fifastreet.webp" alt="Fifa street voor de PS3"></li>
-                <li class="game" data-category="racen"><img src="img/lbpracing.webp" alt="little big planet voor de PS3"></li>
-                <li class="game" data-category="actie"><img src="img/gta5.webp" alt="grand theft auto 5 voor de PS3">
-                </li>
-                <li class="game" data-category="sport"><img src="img/Skate_3.webp" alt="skate 3 voor de PS3"></li>
-                <li class="game" data-category="racen"><img src="img/gta5.webp" alt="grand theft auto 5 voor de PS3"></li>
-                <li class="game" data-category="actie"><img src="img/bo2.webp" alt="Call Of Duty black ops 2 voor de PS3">
-                </li>
-                <li class="game" data-category="sport"><img src="img/fifa12.webp" alt="Fifa 12 voor de PS3"></li>
-                <li class="game" data-category="racen"><img src="img/gta4.webp" alt="grand theft auto 4 voor de PS3"></li>
-                <li class="game" data-category="actie"><img src="img/lbp.webp" alt="little big planet voor de PS3">
-                </li>
-                <li class="game" data-category="sport"><img src="img/fifastreet.webp" alt="Fifa 12 voor de PS3"></li>
-                <li class="game" data-category="racen"><img src="img/lbpracing.webp" alt="little big planet racing voor de PS3"></li>
+                <a href="blackops2.html">    
+                    <li class="game" data-category="10-20"><img src="img/bo2.webp" alt="Call Of Duty black ops 2 voor ps3"></li>
+                </a>
+                <a href="fifa12.html">
+                    <li class="game" data-category="20-30"><img src="img/fifa12.webp" alt="Fifa 12 voor de ps3"></li>
+                </a>
+                <a href="lbpracing.html">
+                    <li class="game" data-category="30-40"><img src="img/lbpracing.webp" alt="little big planet racing for ps3"></li>
+                </a>
+                <a href="gta4.html">
+                    <li class="game" data-category="10-20"><img src="img/gta4.webp" alt="Grand theft auto 4 for ps3"></li>
+                </a>
+                <a href="fifastreet.html">
+                    <li class="game" data-category="20-30"><img src="img/fifastreet.webp" alt="Fifa street voor de PS3"></li>
+                </a>
+                <a href="lbpracing.html">
+                    <li class="game" data-category="30-40"><img src="img/lbpracing.webp" alt="little big planet voor de PS3"></li>
+                </a>
+                <a href="gta5.html">
+                    <li class="game" data-category="10-20"><img src="img/gta5.webp" alt="grand theft auto 5 voor de PS3"></li>
+                </a>
+                <a href="skate3.html">
+                    <li class="game" data-category="20-30"><img src="img/Skate_3.webp" alt="skate 3 voor de PS3"></li>
+                </a>
+                <a href="gta5.html">
+                    <li class="game" data-category="30-40"><img src="img/gta5.webp" alt="grand theft auto 5 voor de PS3"></li>
+                </a>
+                <a href="blackops2.html">
+                    <li class="game" data-category="10-20"><img src="img/bo2.webp" alt="Call Of Duty black ops 2 voor de PS3"></li>
+                </a>
+                <a href="fifa12.html">
+                    <li class="game" data-category="20-30"><img src="img/fifa12.webp" alt="Fifa 12 voor de PS3"></li>
+                </a>
+                <a href="gta4.html">
+                    <li class="game" data-category="30-40"><img src="img/gta4.webp" alt="grand theft auto 4 voor de PS3"></li>
+                </a>
+                <a href="littlebigplanet.html">
+                    <li class="game" data-category="10-20"><img src="img/lbp.webp" alt="little big planet voor de PS3"></li>
+                </a>
+
             </ul>
         </section>
     </main>
+    
 </section>
 <footer class="FrontFooter">
     <h1>

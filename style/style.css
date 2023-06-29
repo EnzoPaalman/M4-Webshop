@@ -224,6 +224,23 @@ header{
     width: 35vw;
 }
 
+.playstation3-button {
+    margin-top: 2rem;
+    height: 7vh;
+    width: 15vw;
+    color: white;
+    background-color: orange;
+    font-size: 2rem;
+    border-radius: 20%;
+    border-color: transparent;
+    border-style: solid;
+    border-color: black;
+}
+
+.playstation3-button:hover{
+    cursor: pointer;
+}
+
 .square--second{
     background: #22bcf8;
     padding: 20vh;
@@ -447,6 +464,17 @@ header{
     align-items: center;
 }
 
+.listedgames:hover{
+    cursor: pointer;
+}
+
+.listedgames > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 .game{
     list-style: none;
     width: 25rem;
@@ -569,6 +597,10 @@ header{
     margin-top: 17rem;
     margin-right: 50%;
     font-size: 2rem;
+}
+
+.filter{
+    width: 8vw;
 }
 
 @media screen and (max-width: 62.5rem) {
